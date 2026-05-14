@@ -1,4 +1,3 @@
-import Header from '../../Hero'
 import RestaurantList from '../../RestaurantList'
 
 import { useGetRestaurantsQuery } from '../../services/api'

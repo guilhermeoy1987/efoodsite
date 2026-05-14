@@ -1,5 +1,4 @@
 import Estrela from '../assets/images/estrela.png'
-import { Link } from 'react-router-dom'
 import {
   CardContainer,
   CardContent,
