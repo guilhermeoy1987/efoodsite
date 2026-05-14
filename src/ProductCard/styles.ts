@@ -9,15 +9,11 @@ export const Card = styled.div`
   padding: 8px;
   background-color: ${cores.salmao};
   color: ${cores.salmaoClaro};
-  p {
-    margin-bottom: 8px;
-    flex-grow: 1; /* FAZ A DESCRIÇÃO OCUPAR TODO O ESPAÇO DISPONÍVEL */
-  }
 `
 
 export const Foto = styled.img`
   width: 100%;
-  height: 100%;
+  height: 167px;
   padding-bottom: 8px;
   display: block;
 `
