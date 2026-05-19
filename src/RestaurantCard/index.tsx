@@ -14,7 +14,6 @@ type Props = {
   id: number
   title: string
   rating: number
-  category: string
   image: string
   description: string
   infos: string[]
