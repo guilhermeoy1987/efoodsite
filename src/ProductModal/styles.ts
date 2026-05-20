@@ -79,9 +79,16 @@ export const ModalContent = styled.div`
   }
 
   p {
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 22px;
     margin-bottom: 16px;
+    display: block;
+
+    /* Medidas do bloco de texto conforme o Layout na imagem */
+    max-width: 656px; /* Largura do bloco de texto (656px) */
+    width: 100%;
   }
 `
 

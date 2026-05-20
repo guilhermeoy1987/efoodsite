@@ -1,5 +1,4 @@
 import Estrela from '../assets/images/estrela.png'
-import { Link } from 'react-router-dom'
 import {
   CardContainer,
   CardContent,
@@ -15,7 +14,6 @@ type Props = {
   id: number
   title: string
   rating: number
-  category: string
   image: string
   description: string
   infos: string[]
