@@ -11,6 +11,7 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
 `
 
 export const CartContainer = styled.div`
@@ -50,6 +51,18 @@ export const SideBar = styled.aside`
   padding: 16px 8px 0 8px;
   max-width: 360px;
   width: 100%;
+  height: 100vh;
+  /* ALINHAMENTO FIXO À DIREITA */
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  /* ESPAÇAMENTO INTERNO (Ajuste conforme seu layout) */
+  padding: 32px 16px 0 16px;
+
+  /* GARANTE QUE O CONTEÚDO FIQUE EM COLUNA */
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: ${breackpoints.mobile}) {
     width: 85%;
@@ -70,6 +83,7 @@ export const SideBar = styled.aside`
 `
 export const CartItem = styled.div`
   background-color: ${cores.salmaoClaro};
+  color: ${cores.salmao}; /* <--- ADICIONE APENAS ESSA LINHA */
   display: flex;
   padding: 8px 8px 12px 8px;
   position: relative;

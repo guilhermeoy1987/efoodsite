@@ -8,7 +8,7 @@ type PratoState = {
 
 const initialState: PratoState = {
   items: [],
-  isOpen: false
+  isOpen: true
 }
 
 const cartSlice = createSlice({

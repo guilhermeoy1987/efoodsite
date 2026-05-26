@@ -19,10 +19,14 @@ const ProductModal = ({ product, isVisible, onClose }: Props) => {
   const addItem = () => {
     if (product) {
       dispatch(add(product))
+
+      // ALTERAÇÃO AQUI: Abre a barra lateral do carrinho na mesma hora do clique!
+      dispatch(open())
+
       onClose()
 
-      toast.success('Item adicionao! Ver carrinho', {
-        onClick: () => dispatch(open()),
+      // Mantemos o seu toast original, mas agora ele é apenas o aviso visual
+      toast.success('Item adicionado! Ver carrinho', {
         icon: <span>🛒</span>,
         position: 'bottom-right',
         autoClose: 4000,
