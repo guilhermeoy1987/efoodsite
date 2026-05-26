@@ -31,12 +31,16 @@ const Cart = () => {
     }, 0)
   }
 
+  // CORREÇÃO ESSENCIAL: Se o carrinho não estiver aberto, o React não renderiza absolutamente nada no HTML.
+  // Isso impede que a estrutura interfira no visual da página Home ou de listagem.
+  if (!isOpen) {
+    return null
+  }
+
   return (
-    // RETORNADO PARA DINÂMICO: Só ganha a classe 'is-open' se o Redux disser que está aberto
     <CartContainer className={isOpen ? 'is-open' : ''}>
       <Overlay onClick={closeCart} />
       <SideBar>
-        {/* A div close-button e o botão agora conseguem fechar o carrinho disparando o closeCart */}
         <div className="close-button">
           <CartCloseButton onClick={closeCart} type="button" />
         </div>
