@@ -1,5 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+<<<<<<< HEAD
 import { Prato } from '../../ProductList'
+=======
+// Mude de '../../ProductList' para '../../../Components/ProductList'
+import { Prato } from '../../Components/ProductList'
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
 
 type PratoState = {
   items: Prato[]
@@ -31,9 +36,21 @@ const cartSlice = createSlice({
     },
     close: (state) => {
       state.isOpen = false
+<<<<<<< HEAD
+=======
+    },
+    // ADICIONE ESTA ACTION AQUI:
+    clear: (state) => {
+      state.items = []
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
     }
   }
 })
 
+<<<<<<< HEAD
 export const { add, remove, open, close } = cartSlice.actions
+=======
+// Não esqueça de exportar o 'clear' aqui embaixo também!
+export const { add, remove, open, close, clear } = cartSlice.actions
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
 export default cartSlice.reducer

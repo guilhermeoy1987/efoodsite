@@ -10,12 +10,24 @@
     "@types/node": "^16.18.23",
     "@types/react": "^18.0.31",
     "@types/react-dom": "^18.0.11",
+<<<<<<< HEAD
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-toastify": "^11.0.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
+=======
+    "formik": "^2.4.9",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-input-mask": "^2.0.4",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.5",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4",
+    "yup": "^1.7.1"
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
   },
   "scripts": {
     "start": "react-scripts start",
@@ -43,6 +55,10 @@
   },
   "devDependencies": {
     "@reduxjs/toolkit": "^2.11.2",
+<<<<<<< HEAD
+=======
+    "@types/react-input-mask": "^3.0.6",
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",

@@ -1,3 +1,7 @@
 {
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)

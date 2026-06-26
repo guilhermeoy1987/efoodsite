@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from '../../Hero'
 import RestaurantList from '../../RestaurantList'
 import { Restaurante } from '../../Models/Restaurant'
@@ -381,5 +382,26 @@ const Home = () => (
     <RestaurantList restaurants={restaurantes} />
   </>
 )
+=======
+import RestaurantList from '../../Components/RestaurantList'
+
+import { useGetRestaurantsQuery } from '../../services/api'
+import Hero from '../../Components/Hero'
+
+const Home = () => {
+  const { data: restaurantes } = useGetRestaurantsQuery()
+
+  if (!restaurantes) {
+    return <h3>Carregando restaurantes...</h3>
+  }
+
+  return (
+    <>
+      <Hero />
+      <RestaurantList restaurants={restaurantes} />
+    </>
+  )
+}
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
 
 export default Home

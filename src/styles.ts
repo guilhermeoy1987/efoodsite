@@ -1,10 +1,19 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const cores = {
+<<<<<<< HEAD
   branca: '#fff',
   salmao: '#E66767',
   salmaoClaro: '#FFEBD9',
   corDeFundo: '#FFF8F2'
+=======
+  corDeFundo: '#FFF8F2',
+  corPrincipal: '#E66767',
+  salmao: '#E66767', // Apelido para manter compatibilidade
+  corSecundaria: '#FFEBD9',
+  salmaoClaro: '#FFEBD9', // Apelido para manter compatibilidade
+  branca: '#FFFFFF'
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
 }
 
 export const breackpoints = {
@@ -36,5 +45,8 @@ export const GlobalCss = createGlobalStyle`
   }
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> afac7c3 (Finalizando projeto efood - parte 4)
 `
